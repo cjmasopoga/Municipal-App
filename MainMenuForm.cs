@@ -297,7 +297,7 @@ namespace Municipal_App
             }
 
             var card1 = MakeCard("1.", "Report Issues", "Report problems or issues in your community.", Color.FromArgb(14,100,206), true, BtnReportIssues_Click);
-            var card2 = MakeCard("2.", "Local Events and Announcements", "View upcoming local events and announcements.", Color.FromArgb(150,150,150), false, null);
+            var card2 = MakeCard("2.", "Local Events and Announcements", "View upcoming local events and announcements.", Color.FromArgb(0,128,96), true, BtnLocalEvents_Click);
             var card3 = MakeCard("3.", "Service Request Status", "Check the status of your service requests.", Color.FromArgb(150,150,150), false, null);
 
             cards.Controls.Add(card1, 0, 0);
@@ -469,6 +469,14 @@ namespace Municipal_App
         private void BtnViewReports_Click(object sender, EventArgs e)
         {
             using (var form = new ViewReportsForm())
+            {
+                form.ShowDialog(this);
+            }
+        }
+
+        private void BtnLocalEvents_Click(object sender, EventArgs e)
+        {
+            using (var form = new LocalEventsForm())
             {
                 form.ShowDialog(this);
             }
