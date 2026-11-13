@@ -53,7 +53,20 @@
     <Compile Include="Models\EventItem.cs" />
     <Compile Include="Models\SimplePriorityQueue.cs" />
     <Compile Include="Models\LocalEventRepository.cs" />
+    <Compile Include="Models\ServiceRequest.cs" />
+    <Compile Include="Models\ServiceRequestRepository.cs" />
+    <Compile Include="Models\Graph.cs" />
+    <Compile Include="Models\Trees\BinarySearchTree.cs" />
+    <Compile Include="Models\Trees\AvlTree.cs" />
+    <Compile Include="Models\Trees\RedBlackTree.cs" />
+    <Compile Include="Models\Trees\StatusWorkflowTree.cs" />
     <Compile Include="LocalEventsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceRequestStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceNetworkForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Program.cs" />
